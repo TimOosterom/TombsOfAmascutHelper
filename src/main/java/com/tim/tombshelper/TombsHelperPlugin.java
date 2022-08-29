@@ -83,7 +83,7 @@ public class TombsHelperPlugin extends Plugin
 		panel = new TombsHelperPanel(this);
 		navButton = NavigationButton.builder()
 				.tooltip("ToA Helper")
-				.icon(ImageUtil.loadImageResource(getClass(), "/toa_nav_icon.png"))
+				.icon(ImageUtil.loadImageResource(getClass(), "/com/tim/tombshelper/toa_nav_icon.png"))
 				.priority(50)
 				.panel(panel)
 				.build();
