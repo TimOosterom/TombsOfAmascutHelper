@@ -23,7 +23,7 @@ import net.runelite.client.util.ImageUtil;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Tombs of Amascut Helper"
+	name = "ToA Puzzle Helper"
 )
 public class TombsHelperPlugin extends Plugin
 {
