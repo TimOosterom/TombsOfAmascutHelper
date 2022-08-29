@@ -4,16 +4,17 @@ import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
+@ConfigGroup(TombsHelperConfig.GROUP)
 public interface TombsHelperConfig extends Config
 {
+	String GROUP = "toahelper";
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+		keyName = "Auto hide panel",
+		name = "Hide panel when outside of ToA",
+		description = "Removes the sidebar panel when not in the Tombs of Amascut",
+		position = 1
 	)
-	default String greeting()
-	{
-		return "Hello";
+	default boolean autoHide() {
+		return true;
 	}
 }
