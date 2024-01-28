@@ -174,7 +174,6 @@ public class TombsHelperPlugin extends Plugin
 			clientToolbar.addNavigation(navButton);
 		} else {
 			clientToolbar.removeNavigation(navButton);
-			navButton.setSelected(false);
 		}
 	}
 
